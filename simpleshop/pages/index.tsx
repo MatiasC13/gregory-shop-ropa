@@ -58,7 +58,6 @@ const IndexRoute = ({ initialProducts }: Props): JSX.Element => {
         <title>{showBusinesName}</title>
       </Head>
       <>
-      <h1>Este es la tienda</h1>
         {slider && (
           <>
             {stateProducts.boostProducts.length > 3 ? (

@@ -55,7 +55,7 @@ const Footer = () => {
               aria-label={"link de whatssap  para confirmar la compra"}
             />
           </a>
-          {false && (
+          {true && (
             <a target="_blank" href={instagramAccount} rel="noreferrer">
               <Icon
                 h={9}
@@ -66,7 +66,7 @@ const Footer = () => {
               />
             </a>
           )}
-          {false && (
+          {true && (
             <a target="_blank" href={instagramAccount} rel="noreferrer">
               <Icon
                 h={9}
@@ -86,7 +86,10 @@ const Footer = () => {
         color={"whiteAlpha.900"}
         fontSize={"0.7rem"}
       >
-        made with ❤ by Gregory
+        made with ❤ by
+        <a target="blank" href="https://ladingpage-cyan.vercel.app/">
+          Gregory
+        </a>
       </Text>
     </>
   );

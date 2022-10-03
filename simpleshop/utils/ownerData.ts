@@ -2,7 +2,7 @@ const business = {
   celular: "celular",
   ropa: "ropa",
   comida: "comida",
-  garage:"garage"
+  garage: "garage",
 };
 
 // set the mode of the shop
@@ -15,14 +15,14 @@ export const showBusinesName =
     ? "Equipos Mobiles"
     : businessType === business.ropa
     ? "Ropa a la Moda"
-    :businessType === business.garage
-    ?"Venta de garage"
+    : businessType === business.garage
+    ? "Venta de garage"
     : "Viandas del Sur";
 
 export const showFavIcon = `${businessType}/icon-192x192.png`;
 export const showBannerType = `/logo&banner/${businessType}/banner.gif`;
 export const whatsaapNumber = "59897097479";
-export const email = "fernandoleonett@gmail.com";
+export const email = "gregory.notificaciones@gmail.com";
 export const msgOWnerContact = "Hola tengo una consulta sobre tu tienda";
 export const instagramAccount = "https://www.instagram.com/fjleonett/";
 export const facebookAccount = "https://www.instagram.com/fjleonett/";
@@ -59,7 +59,6 @@ const ComidaMode = {
   100: "#f69d55",
 };
 
-
 const GarageMode = {
   50: "#acb4c4", //BOTÓN HOVER
   100: "#4764e0", // BOTÓN ACTIVE & SCROLL & CARGA
@@ -90,7 +89,7 @@ export const themeOwner =
     ? celularMode
     : businessType === "ropa"
     ? RopaMode
-    : businessType ==="garage"
+    : businessType === "garage"
     ? GarageMode
     : ComidaMode;
 
@@ -98,7 +97,6 @@ const documentSettingsCelular = {
   metaDescription: "Tecnologia, Equipos Mobiles",
   metaKeyWords: "Iphone, Samsung, Android",
 };
-
 
 const documentSettigsVianda = {
   metaDescription: "Viandas sanas y saludables.",
@@ -113,7 +111,6 @@ const documentSettigsGarage = {
   metaKeyWords: "cocina, lavaropa, tv cama, heladera, mesa",
 };
 
-
 export const documentSetttings =
   businessType === "celular"
     ? documentSettingsCelular
@@ -123,9 +120,6 @@ export const documentSetttings =
     ? documentSettigsGarage
     : documentSettigsVianda;
 
-
-
 export const manifestPath = `${businessType}/manifest.json`;
 
-
-documentSettigsVianda
+documentSettigsVianda;

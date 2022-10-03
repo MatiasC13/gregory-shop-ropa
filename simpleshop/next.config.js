@@ -22,7 +22,7 @@ module.exports = withPWA({
   },
 
   env: {
-    GMAIL_USER: "servicio.notificaciones.compras@gmail.com",
+    GMAIL_USER: "gregory.notificaciones@gmail.com",
 
     LOCAL_URL: "https://simpleshop-sand.vercel.app/",
   },

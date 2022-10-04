@@ -88,6 +88,7 @@ const Footer = () => {
       >
         made with ❤ by
         <a target="blank" href="https://ladingpage-cyan.vercel.app/">
+          {" "}
           Gregory
         </a>
       </Text>

@@ -98,7 +98,7 @@ const DrawerComponent = () => {
               Pagar con:
             </Text>
             <Flex
-              flexDir={["column", "row"]}
+              flexDir={"row"}
               justifyContent={"space-around"}
               alignItems={"center"}
             >

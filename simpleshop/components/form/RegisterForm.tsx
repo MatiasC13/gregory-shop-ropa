@@ -35,24 +35,25 @@ const RegisterForm = () => {
   };
 
   const btnHanlderPay = () => {
-    let title = "todo ok";
+    let title = "Datos completados correctamente";
     let status = "success";
     if (email == "" || name == "" || surname == "") {
-      title = "todos los camps son requeridos 🤨";
+      title = "Todos los campos son requeridos";
+      status = "warning";
     } else if (!validateEmail(email)) {
-      title = "email no valido 🤨";
+      title = "Email no válido";
+      status = "warning";
     } else {
       getInitPoint(cart, user, "api/api_mp")
         .then((response) => response.json())
         .then((data) => {
-          console.log(data)
+          console.log(data);
           router.push(data.init_point);
-
-
           status = "success";
         })
         .catch(() => {
-          title = "ocurrio un error inesperado 😕";
+          title = "Ocurrió un error inesperado.";
+          status = "error";
         });
     }
 
@@ -110,7 +111,7 @@ const RegisterForm = () => {
             </FormControl>
 
             <FormControl mt={4}>
-              <FormLabel>Correo Electronico</FormLabel>
+              <FormLabel>Correo electrónico</FormLabel>
               <Input
                 value={email}
                 onChange={onChangeInput}

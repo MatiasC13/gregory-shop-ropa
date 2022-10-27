@@ -1,25 +1,17 @@
 import Product from "interfaces/Product";
-import { supabase } from "../client/supabase";
+import { urlBase } from "utils/helper";
 
-const getProducts = async (): Promise<Product []> => {
-  // const user = supabase.auth.user();
+import { ownerEmail } from "utils/ownerData";
 
+const getProducts = async (): Promise<Product[]> => {
   try {
-    const { error, data } = await supabase
-      .from("products")
-      .select("id, title,description,price,category, image, boost")
+    const response = await fetch(urlBase + ownerEmail);
+    const data = await response.json();
 
-      .eq("userId", "ff89cccf-8d76-4b3c-a0a1-07b1fa9dad65");
-
-    // .order("id", { ascending: false });
-
-    if (error) {
-      throw error;
-    }
-    console.log("data: ", data);
-    return data;
+    // console.log(data);
+    return data.data;
   } catch (error) {
-    // alert(error.error_description || error.message);
+    alert(error.error_description || error.message);
   }
 };
 

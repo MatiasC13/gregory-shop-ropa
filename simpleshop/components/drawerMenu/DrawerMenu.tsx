@@ -32,8 +32,8 @@ const DrawerComponent = () => {
               border: "none",
               background: "primary.50",
             }}
-            _focusVisible={{ 
-              boxShadow: "none" 
+            _focusVisible={{
+              boxShadow: "none",
             }}
           />
           <Text color={"primary.500"}>Categorías</Text>

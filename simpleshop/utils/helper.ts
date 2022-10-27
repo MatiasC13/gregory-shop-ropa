@@ -102,5 +102,7 @@ export  const rgbDataURL = (arr) =>
       triplet(0, arr[0], arr[1]) + triplet(arr[2], 255, 255)
     }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
 
+export const urlBase =
+  "https://us-central1-admin-gregory-shop.cloudfunctions.net/app/api/products/";
 
 

@@ -20,7 +20,7 @@ interface props{
 const SwiperImage = ({title, image}:props) => {
   return (
       <Swiper
-        loop={true}
+        loop={image.length > 1 ? true : false}
         autoplay={{
           delay: 2500,
           disableOnInteraction: true,

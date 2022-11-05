@@ -91,7 +91,6 @@ const IndexRoute = ({ initialProducts }: Props): JSX.Element => {
 export default IndexRoute;
 
 export const getStaticProps: GetStaticProps = async () => {
-// const initialProducts = await apiExcel(process.env.URL_EXCEL);
   const initialProducts = await getProducts()
 
 
